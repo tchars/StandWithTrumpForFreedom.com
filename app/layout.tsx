@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,9 +55,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="pt" className="scroll-smooth">
+		<html lang="pt" className="scroll-smooth" suppressHydrationWarning={true}>
 			<body className={`${inter.className} bg-white text-gray-900 antialiased`}>
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
