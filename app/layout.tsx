@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 		siteName: "Stand With Trump For Freedom",
 		images: [
 			{
-				url: "/og-image.jpg",
+				url: "/og-image.png",
 				width: 1200,
 				height: 630,
 				alt: "Stand With Trump For Freedom",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Stand With Trump For Freedom",
 		description: "América Latina unida pela democracia e liberdade.",
-		images: ["/og-image.jpg"],
+		images: ["/og-image.png"],
 	},
 	robots: {
 		index: true,
